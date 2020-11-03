@@ -9,7 +9,7 @@
 		<!-- Start with a nav bar up top (preferably containing a logo)
 			-Who they are
 			-Where they are in the org
-			-Track descriptions-->
+			-Team descriptions-->
 		<header class="header">
 				<ul class="main-nav">
 					<li> <a href="index.html" class="nav-menu-item"><h4>Home</h4></a></li>
@@ -28,84 +28,104 @@
 			</div>
 		</section>
 		<div class="banner"></div>
+		
+		<!--DROPDOWN TEST
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">All Tracks</button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  			<button class="btn" onclick="filterSelection('churntatoe')"> Churntatoes</button>
+  			<button class="btn" onclick="filterSelection('quotatoe')"> Quotatoes</button>
+  			<button class="btn" onclick="filterSelection('onboardtatoe')"> Onboardtatoes</button>
+		  </div>
+		</div>-->
+
+		<!--Filter Buttons-->
+		<div id="myBtnContainer">
+  			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  			<button class="btn" onclick="filterSelection('churntatoe')"> Churntatoes</button>
+  			<button class="btn" onclick="filterSelection('quotatoe')"> Quotatoes</button>
+  			<button class="btn" onclick="filterSelection('onboardtatoe')"> Onboardtatoes</button>
+		</div>
+
 		<section class="persons">
-			<div class="person-icon" onclick="openModal();currentSlide(1)">
+			<div class="person-icon show churntatoe" onclick="openModal();currentSlide(1)">
 				<h2>Jordan Bacher</h2>
 				<img class="person-headshot" src="images/Headshots/0-1.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Churntatoe</li>
 					<li><strong>Teams:</strong> CX, CS, Product Marketing, UX Research</li>
 					<li><strong>Interests:</strong> Product Management, Product Marketing, Software Engineering</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(2)">
+			<div class="person-icon show churntatoe" onclick="openModal();currentSlide(2)">
 				<h2>Mary Carroll</h2>
 				<img class="person-headshot" src="images/Headshots/MC.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Churntatoe</li>
 					<li><strong>Teams:</strong> CX, CS, Marketing Opps, UX Writing</li>
 					<li><strong>Interests:</strong> Marketing Opps, UX Writing</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(3)">
+			<div class="person-icon show quotatoe" onclick="openModal();currentSlide(3)">
 				<h2>Julia Dearden</h2>
 				<img class="person-headshot" src="images/Headshots/0.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Quotatoe</li>
 					<li><strong>Teams:</strong> CX, CS, Web, UX Research</li>
 					<li><strong>Interests:</strong> Web(Full Stack), Software Engineering</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(4)">
+			<div class="person-icon show churntatoe" onclick="openModal();currentSlide(4)">
 				<h2>Matt Dynan</h2>
 				<img class="person-headshot" src="images/Headshots/MD.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Churntatoe</li>
 					<li><strong>Teams:</strong> CX, CS, Digital Marketing, UX Research</li>
 					<li><strong>Interests:</strong> Digital Marketing, UX Research</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(5)">
+			<div class="person-icon show quotatoe" onclick="openModal();currentSlide(5)">
 				<h2>TJ Faherty</h2>
 				<img class="person-headshot" src="images/Headshots/TF.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Quotatoe</li>
 					<li><strong>Teams:</strong> CX, CS, Service Design, Marketing Opps</li>
 					<li><strong>Interests:</strong> Gainsight, Opps (Marketing, Customer)</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(6)">
+			<div class="person-icon show onboardtatoe" onclick="openModal();currentSlide(6)">
 				<h2>Zeran Ji</h2>
 				<img class="person-headshot" src="images/Headshots/ZL.png">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Onboardtatoe</li>
 					<li><strong>Teams:</strong> CX, CS, Service Design, Demand Generation</li>
 					<li><strong>Interests:</strong> UX Research, Product Marketing</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(7)">
+			<div class="person-icon show onboardtatoe" onclick="openModal();currentSlide(7)">
 				<h2>Sophie Johnson</h2>
 				<img class="person-headshot" src="images/Headshots/SJ.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Onboardtatoe</li>
 					<li><strong>Teams:</strong> CX, CS, UX Writing, Customer Marketing</li>
 					<li><strong>Interests:</strong> Product Management, Customer Marketing</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(8)">
+			<div class="person-icon show onboardtatoe" onclick="openModal();currentSlide(8)">
 				<h2>Michael Rosen</h2>
 				<img class="person-headshot" src="images/Headshots/MR.png">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Onboardtatoe</li>
 					<li><strong>Teams:</strong> CX, CS, UX Research, Marketing Opps</li>
 					<li><strong>Interests:</strong> Product Management, UX Research</li>
 				</ul>
 			</div>
-			<div class="person-icon" onclick="openModal();currentSlide(9)">
+			<div class="person-icon show quotatoe" onclick="openModal();currentSlide(9)">
 				<h2>Emma Townsend</h2>
 				<img class="person-headshot" src="images/Headshots/ET.jpg">
 				<ul>
-					<li><strong>Track:</strong> #Grow</li>
+					<li><strong>Team:</strong> Quotatoe</li>
 					<li><strong>Teams:</strong> CX, CS, UX Writing, Customer Marketing</li>
 					<li><strong>Interests:</strong> UX Writing, UX Design</li>
 				</ul>
@@ -118,6 +138,8 @@
 		  <div class="modal-content">
 		    <div class="mySlides">
 		      <img src="images/Headshots/0-1.jpg" class="mySlides-headshot">
+		      <h2>Jordan Bacher</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -131,6 +153,8 @@
 		   
 		    <div class="mySlides">
 		      <img src="images/Headshots/MC.jpg" class="mySlides-headshot">
+		      <h2>Mary Carroll</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -144,6 +168,8 @@
 
 		    <div class="mySlides">
 		       <img src="images/Headshots/0.jpg" class="mySlides-headshot">
+		       <h2>Julia Dearden</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -157,6 +183,8 @@
 
 		    <div class="mySlides">
 		       <img src="images/Headshots/MD.jpg" class="mySlides-headshot">
+		       <h2>Matt Dynan</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -170,6 +198,8 @@
 
 		    <div class="mySlides">
 		       <img src="images/Headshots/TF.jpg" class="mySlides-headshot">
+		       <h2>TJ Faherty</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -183,6 +213,8 @@
 
 		    <div class="mySlides">
 		       <img src="images/Headshots/ZL.png" class="mySlides-headshot">
+		       <h2>Zeran Ji</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -196,6 +228,9 @@
 
 		    <div class="mySlides">
 		       <img src="images/Headshots/SJ.jpg" class="mySlides-headshot">
+		      <br>
+		      <h2>Sophie Johnson</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -208,7 +243,9 @@
 		    </div>
 
 		    <div class="mySlides">
-		       <img src="images/Headshots/MR.png" class="mySlides-headshot">
+		      <img src="images/Headshots/MR.png" class="mySlides-headshot">
+		      <h2>Michael Rosen</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
@@ -221,7 +258,9 @@
 		    </div>
 
 		    <div class="mySlides">
-		       <img src="images/Headshots/ET.jpg" class="mySlides-headshot">
+		      <img src="images/Headshots/ET.jpg" class="mySlides-headshot">
+		      <h2>Emma Townsend</h2>
+		      <br>
 		      <div class="mySlides-text">
 		      	<ul>
 					<li><strong>Background:</strong> West philedelphia born and raised on the playground is where I spent most of my days. Chillin out maxing and relaxing all cool, shoot some B-ball down by the school</li>
