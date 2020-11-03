@@ -42,7 +42,7 @@ table {
   	min-height: 40px;
 }
 
-/*NAV BUTTON STUFF*/
+/*NAV BUTTON STUFF
 .nav-btn {
 	position: relative;
 	display: flex;
@@ -73,7 +73,7 @@ table {
 	transition: all .4s ease-in-out;
 }
 
-/*NAV BUTTON TRANSFORMATION*/
+/*NAV BUTTON TRANSFORMATION
 .nav-btn-burger::before {
 	transform: translateY(-16px);
 }
@@ -167,6 +167,11 @@ table {
 	display: flex;
   	flex-direction: column;
   	justify-content: center;
+}
+
+#myBtnContainer {
+	text-align: right;
+	margin: .5rem;
 }
 /*	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
